@@ -1,0 +1,42 @@
+:root {
+  --background-clr: rgb(245, 245, 245);
+  --left-marg: 2rem;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-clr);
+  display: flex;
+  flex-direction: row; 
+}
+
+.left-col {
+  width: 40vw;
+  height: 100vh;
+  background-image: url("./images/photo-1585202900225-6d3ac20a6962.avif");
+  background-size: cover;
+}
+
+.titles {
+  margin: 6rem 0 0 var(--left-marg);
+}
+
+.card-container > h2 {margin-left: var(--left-marg)}
+
+.card-container{
+  box-sizing: border-box;
+  background-color: white;
+  width: 60vw;
+  margin: 7rem 0 10rem;
+  padding: 2rem 18rem 2rem 0;
+  box-shadow: 0 2px 5px #888;
+}
+
+.wrap {
+  display: flex;
+  justify-content: left;
+  margin:0 0 1rem var(--left-marg);
+  gap: 5rem;
+}
