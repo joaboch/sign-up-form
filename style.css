@@ -1,6 +1,11 @@
 :root {
   --background-clr: rgb(245, 245, 245);
-  --left-marg: 2rem;
+  --left-marg: 3rem;
+}
+
+@font-face {
+  font-family: odin;
+  src: url("./fonts/Norse-Bold.otf");
 }
 
 body {
@@ -19,24 +24,91 @@ body {
   background-size: cover;
 }
 
-.titles {
-  margin: 6rem 0 0 var(--left-marg);
+.right-col {
+  height: 100vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.logo {
+  color: white;
+  background-color: #0000003d;
+  height: 10rem;
+  position: relative;
+  top: 12rem;
+  text-align: center;
+  font-family: "odin";
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {height: 8rem;}
+
+p {
+  margin-top: 5rem;
+}
+
+.titles,
+.account-opt {
+  height: 32.5vh;
+  padding: 5rem 10rem 0 var(--left-marg);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container{  
+  background-color: white;
+  height: 35vh;
+  width: 60vw;
+  padding: 2rem 0 2rem 0;
+  box-shadow: 1px 2px 5px #8a8a8a;
 }
 
 .card-container > h2 {margin-left: var(--left-marg)}
-
-.card-container{
-  box-sizing: border-box;
-  background-color: white;
-  width: 60vw;
-  margin: 7rem 0 10rem;
-  padding: 2rem 18rem 2rem 0;
-  box-shadow: 0 2px 5px #888;
-}
 
 .wrap {
   display: flex;
   justify-content: left;
   margin:0 0 1rem var(--left-marg);
   gap: 5rem;
+}
+
+label {
+  color: #4d4c4c;
+}
+
+input {
+  border: 1.5px solid rgb(155, 154, 154);
+  border-radius: 5px;
+  height: 22px;
+  width: 250px;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 9rem;
+  color: white;
+}
+
+#acc-create {
+  height: 3rem;
+  width: 14rem;
+  border-radius: 5px;
+  border: 0;
+  background-color: #596D48;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
