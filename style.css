@@ -10,6 +10,8 @@
 
 body {
   font-family: 'Courier New', Courier, monospace;
+  word-spacing: -4px;
+  letter-spacing: -1.5px;
   margin: 0;
   padding: 0;
   background-color: var(--background-clr);
@@ -49,7 +51,18 @@ div {
   justify-content: center;
 }
 
-img {height: 8rem;}
+img {height: 8rem; width: 6rem;}
+
+.photo-info, 
+.photo-info > a {
+  color: white;
+}
+
+.photo-info {
+  position: relative;
+  top: 48rem;
+  text-align: center;
+}
 
 p {
   margin-top: 5rem;
@@ -88,18 +101,10 @@ label {
 }
 
 input {
-  border: 1.5px solid rgb(155, 154, 154);
+  border: 1.5px solid #E5E7EB;
   border-radius: 5px;
   height: 22px;
   width: 250px;
-}
-
-
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 9rem;
-  color: white;
 }
 
 #acc-create {
@@ -111,4 +116,9 @@ footer {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
+}
+
+.account-opt > p > a {
+  text-decoration: none;
+  color: #596D48;
 }
