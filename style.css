@@ -11,12 +11,12 @@
 body {
   font-family: 'Courier New', Courier, monospace;
   word-spacing: -4px;
-  letter-spacing: -1.5px;
+  letter-spacing: -1px;
   margin: 0;
   padding: 0;
   background-color: var(--background-clr);
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
 }
 
 .left-col {
@@ -60,7 +60,7 @@ img {height: 8rem; width: 6rem;}
 
 .photo-info {
   position: relative;
-  top: 48rem;
+  bottom: -78vh;
   text-align: center;
 }
 
@@ -72,6 +72,7 @@ p {
 .account-opt {
   height: 32.5vh;
   padding: 5rem 10rem 0 var(--left-marg);
+  overflow: auto;
 }
 
 form {
@@ -85,6 +86,7 @@ form {
   width: 60vw;
   padding: 2rem 0 2rem 0;
   box-shadow: 1px 2px 5px #8a8a8a;
+  overflow: auto;
 }
 
 .card-container > h2 {margin-left: var(--left-marg)}
@@ -92,8 +94,8 @@ form {
 .wrap {
   display: flex;
   justify-content: left;
-  margin:0 0 1rem var(--left-marg);
-  gap: 5rem;
+  margin-left: var(--left-marg);
+  flex-wrap: wrap;
 }
 
 label {
@@ -101,10 +103,11 @@ label {
 }
 
 input {
-  border: 1.5px solid #E5E7EB;
+  border: 2px solid #E5E7EB;
   border-radius: 5px;
-  height: 22px;
-  width: 250px;
+  height: 25px;
+  width: 300px;
+  margin: 0 5rem 1rem 0;
 }
 
 #acc-create {
@@ -121,4 +124,13 @@ input {
 .account-opt > p > a {
   text-decoration: none;
   color: #596D48;
+}
+
+.pass:invalid {
+  border: 1px solid red;
+}
+
+input:focus {
+  border: 2px solid #2059d3;
+  outline: none;
 }

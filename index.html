@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up form</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/x-icon" href="images/odin-lined.png">
 </head>
 
 <body>
@@ -25,17 +26,17 @@
           <div class="wrap">
             <div>
               <label for="fName">FIRST NAME</label><br>
-              <input type="text" name="first_name" id="fName">
+              <input type="text" name="first_name" id="fName" required>
             </div>
             <div>
               <label for="lName">LAST NAME</label><br>
-              <input type="text" name="last_name" id="lName">
+              <input type="text" name="last_name" id="lName" required>
             </div>
           </div>
           <div class="wrap">
             <div>
               <label for="email">EMAIL</label><br>
-              <input type="email" name="email" id="email">
+              <input type="email" placeholder="123@gmail.com" name="email" id="email" required>
             </div>
             <div>
               <label for="number">PHONE NUMBER</label><br>
@@ -45,11 +46,11 @@
           <div class="wrap">
             <div>
               <label for="password">PASSWORD</label><br>
-              <input type="password" name="password" id="password">
+              <input type="password" class="pass" name="password" id="password" required>
             </div>
             <div>
               <label for="passwordConfirm">CONFIRM PASSWORD</label><br>
-              <input type="password" name="passwordConfirm" id="passwordConfirm">
+              <input type="password" class="pass" name="passwordConfirm" id="passwordConfirm" required>
             </div>
           </div>
         </div>
